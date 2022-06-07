@@ -11,7 +11,7 @@
     --background-fourth-color: #C4C4C4;
 }
 
-/* ===== СБРОС ЗНАЧЕНИЯ БРАУЗЕРОВ ПО УМОЛЧАНИЮ =====*/
+/* ===== СБРОС ЗНАЧЕНИЯ БРАУЗЕРОВ ПО УМОЛЧАНИЮ ===== */
 
 h1,
 h2,
@@ -224,7 +224,8 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/1-hero/hero-bg.jpg");
     background-color: var(--background-fourth-color);
     background-size: cover;
-
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -488,18 +489,18 @@ body {
 }
 
 .clients-list-icon {
-    padding: 16px 32px;
-
-    width: 100%;
-    height: 100%;
+    width: 106px;
+    height: 60px;
     fill: currentColor;
 }
 
-.clients-list-link:hover {
+.clients-list-link:hover,
+.clients-list-link:focus {
     border: 1px solid var(--accent-color);
 }
 
-.clients-list-link:hover .clients-list-icon {
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
     fill: var(--accent-color);
 }
 
@@ -535,7 +536,7 @@ body {
 
 .section-filter-button:hover,
 .section-filter-button:focus {
-    background-color: var(--accent-color);
+    background-color: var(--background-accent-color);
     color: var(--third-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -557,9 +558,7 @@ body {
 
 .our-projects-card:hover,
 .our-projects-card:focus {
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .our-projects-item:not(:nth-child(3n)) {
@@ -612,9 +611,6 @@ body {
 .footer-container {
     display: flex;
     align-items: baseline;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
 }
 
 .footer-left {
